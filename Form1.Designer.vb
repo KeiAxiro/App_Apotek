@@ -24,30 +24,30 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label_selamat_datang = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Panel_Kiri = New System.Windows.Forms.Panel()
+        Me.PictureBox_LogoFarmasi = New System.Windows.Forms.PictureBox()
+        Me.Label_NamaApp = New System.Windows.Forms.Label()
+        Me.Panel_Kanan = New System.Windows.Forms.Panel()
+        Me.Button_Reset = New System.Windows.Forms.Button()
+        Me.Button_Login = New System.Windows.Forms.Button()
+        Me.Label_Silahkan = New System.Windows.Forms.Label()
+        Me.Panel_InputPassword = New System.Windows.Forms.Panel()
+        Me.TextBox_Password = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Panel_InputUsername = New System.Windows.Forms.Panel()
+        Me.TextBox_Username = New System.Windows.Forms.TextBox()
         Me.Label_Username = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox_LogoAtas = New System.Windows.Forms.PictureBox()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel4.SuspendLayout()
+        Me.Panel_Kiri.SuspendLayout()
+        CType(Me.PictureBox_LogoFarmasi, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_Kanan.SuspendLayout()
+        Me.Panel_InputPassword.SuspendLayout()
+        Me.Panel_InputUsername.SuspendLayout()
+        CType(Me.PictureBox_LogoAtas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SplitContainer1
@@ -60,83 +60,116 @@ Partial Class Form1
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel4)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel_Kiri)
         '
         'SplitContainer1.Panel2
         '
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel1)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel_Kanan)
         Me.SplitContainer1.Size = New System.Drawing.Size(780, 407)
         Me.SplitContainer1.SplitterDistance = 228
         Me.SplitContainer1.TabIndex = 0
         '
-        'Label1
+        'Panel_Kiri
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label1.Location = New System.Drawing.Point(54, 72)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(127, 78)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "APLIKASI" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "APOTEK" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "XYZ"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Panel_Kiri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel_Kiri.Controls.Add(Me.PictureBox_LogoFarmasi)
+        Me.Panel_Kiri.Controls.Add(Me.Label_NamaApp)
+        Me.Panel_Kiri.Cursor = System.Windows.Forms.Cursors.No
+        Me.Panel_Kiri.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_Kiri.Name = "Panel_Kiri"
+        Me.Panel_Kiri.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Panel_Kiri.Size = New System.Drawing.Size(136, 407)
+        Me.Panel_Kiri.TabIndex = 0
         '
-        'PictureBox1
+        'PictureBox_LogoFarmasi
         '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(43, 211)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(138, 167)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox_LogoFarmasi.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox_LogoFarmasi.Image = CType(resources.GetObject("PictureBox_LogoFarmasi.Image"), System.Drawing.Image)
+        Me.PictureBox_LogoFarmasi.Location = New System.Drawing.Point(-3, 211)
+        Me.PictureBox_LogoFarmasi.Name = "PictureBox_LogoFarmasi"
+        Me.PictureBox_LogoFarmasi.Size = New System.Drawing.Size(138, 167)
+        Me.PictureBox_LogoFarmasi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox_LogoFarmasi.TabIndex = 0
+        Me.PictureBox_LogoFarmasi.TabStop = False
         '
-        'Panel1
+        'Label_NamaApp
         '
-        Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel1.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Label_selamat_datang)
-        Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Location = New System.Drawing.Point(49, 15)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(450, 380)
-        Me.Panel1.TabIndex = 0
+        Me.Label_NamaApp.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label_NamaApp.AutoSize = True
+        Me.Label_NamaApp.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Label_NamaApp.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_NamaApp.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.Label_NamaApp.Location = New System.Drawing.Point(8, 72)
+        Me.Label_NamaApp.Name = "Label_NamaApp"
+        Me.Label_NamaApp.Size = New System.Drawing.Size(127, 78)
+        Me.Label_NamaApp.TabIndex = 0
+        Me.Label_NamaApp.Text = "APLIKASI" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "APOTEK" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "XYZ"
+        Me.Label_NamaApp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label_selamat_datang
+        'Panel_Kanan
         '
-        Me.Label_selamat_datang.AutoSize = True
-        Me.Label_selamat_datang.Font = New System.Drawing.Font("Segoe Script", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_selamat_datang.Location = New System.Drawing.Point(126, 107)
-        Me.Label_selamat_datang.Name = "Label_selamat_datang"
-        Me.Label_selamat_datang.Size = New System.Drawing.Size(207, 25)
-        Me.Label_selamat_datang.TabIndex = 4
-        Me.Label_selamat_datang.Text = "Silahkan Login Dahulu!"
+        Me.Panel_Kanan.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel_Kanan.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel_Kanan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel_Kanan.Controls.Add(Me.Button_Reset)
+        Me.Panel_Kanan.Controls.Add(Me.Button_Login)
+        Me.Panel_Kanan.Controls.Add(Me.Label_Silahkan)
+        Me.Panel_Kanan.Controls.Add(Me.Panel_InputPassword)
+        Me.Panel_Kanan.Controls.Add(Me.Panel_InputUsername)
+        Me.Panel_Kanan.Controls.Add(Me.PictureBox_LogoAtas)
+        Me.Panel_Kanan.Location = New System.Drawing.Point(49, 15)
+        Me.Panel_Kanan.Name = "Panel_Kanan"
+        Me.Panel_Kanan.Size = New System.Drawing.Size(450, 380)
+        Me.Panel_Kanan.TabIndex = 0
+        Me.Panel_Kanan.TabStop = True
         '
-        'Panel3
+        'Button_Reset
         '
-        Me.Panel3.Controls.Add(Me.TextBox2)
-        Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Location = New System.Drawing.Point(75, 228)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(300, 58)
-        Me.Panel3.TabIndex = 3
+        Me.Button_Reset.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Reset.Location = New System.Drawing.Point(273, 312)
+        Me.Button_Reset.Name = "Button_Reset"
+        Me.Button_Reset.Size = New System.Drawing.Size(102, 32)
+        Me.Button_Reset.TabIndex = 3
+        Me.Button_Reset.Text = "Reset"
+        Me.Button_Reset.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'Button_Login
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(0, 32)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(300, 23)
-        Me.TextBox2.TabIndex = 2
+        Me.Button_Login.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Login.Location = New System.Drawing.Point(75, 312)
+        Me.Button_Login.Name = "Button_Login"
+        Me.Button_Login.Size = New System.Drawing.Size(102, 32)
+        Me.Button_Login.TabIndex = 2
+        Me.Button_Login.Text = "Login"
+        Me.Button_Login.UseVisualStyleBackColor = True
+        '
+        'Label_Silahkan
+        '
+        Me.Label_Silahkan.AutoSize = True
+        Me.Label_Silahkan.Font = New System.Drawing.Font("Segoe Script", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_Silahkan.Location = New System.Drawing.Point(126, 107)
+        Me.Label_Silahkan.Name = "Label_Silahkan"
+        Me.Label_Silahkan.Size = New System.Drawing.Size(207, 25)
+        Me.Label_Silahkan.TabIndex = 4
+        Me.Label_Silahkan.Text = "Silahkan Login Dahulu!"
+        '
+        'Panel_InputPassword
+        '
+        Me.Panel_InputPassword.Controls.Add(Me.TextBox_Password)
+        Me.Panel_InputPassword.Controls.Add(Me.Label4)
+        Me.Panel_InputPassword.Location = New System.Drawing.Point(75, 228)
+        Me.Panel_InputPassword.Name = "Panel_InputPassword"
+        Me.Panel_InputPassword.Size = New System.Drawing.Size(300, 58)
+        Me.Panel_InputPassword.TabIndex = 0
+        '
+        'TextBox_Password
+        '
+        Me.TextBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox_Password.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_Password.Location = New System.Drawing.Point(0, 32)
+        Me.TextBox_Password.Name = "TextBox_Password"
+        Me.TextBox_Password.Size = New System.Drawing.Size(300, 23)
+        Me.TextBox_Password.TabIndex = 1
         '
         'Label4
         '
@@ -149,23 +182,23 @@ Partial Class Form1
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Password"
         '
-        'Panel2
+        'Panel_InputUsername
         '
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Controls.Add(Me.Label_Username)
-        Me.Panel2.Location = New System.Drawing.Point(75, 164)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(300, 58)
-        Me.Panel2.TabIndex = 3
+        Me.Panel_InputUsername.Controls.Add(Me.TextBox_Username)
+        Me.Panel_InputUsername.Controls.Add(Me.Label_Username)
+        Me.Panel_InputUsername.Location = New System.Drawing.Point(75, 164)
+        Me.Panel_InputUsername.Name = "Panel_InputUsername"
+        Me.Panel_InputUsername.Size = New System.Drawing.Size(300, 58)
+        Me.Panel_InputUsername.TabIndex = 0
         '
-        'TextBox1
+        'TextBox_Username
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(0, 32)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(300, 23)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBox_Username.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox_Username.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_Username.Location = New System.Drawing.Point(0, 32)
+        Me.TextBox_Username.Name = "TextBox_Username"
+        Me.TextBox_Username.Size = New System.Drawing.Size(300, 23)
+        Me.TextBox_Username.TabIndex = 0
         '
         'Label_Username
         '
@@ -178,48 +211,15 @@ Partial Class Form1
         Me.Label_Username.TabIndex = 0
         Me.Label_Username.Text = "Username" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'PictureBox2
+        'PictureBox_LogoAtas
         '
-        Me.PictureBox2.Image = Global.App_Apotek.My.Resources.Resources.Logo_Pharmacie_780x560_removebg_preview
-        Me.PictureBox2.Location = New System.Drawing.Point(187, 9)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(75, 75)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
-        'Panel4
-        '
-        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Panel4.Controls.Add(Me.PictureBox1)
-        Me.Panel4.Controls.Add(Me.Label1)
-        Me.Panel4.Cursor = System.Windows.Forms.Cursors.No
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Panel4.Size = New System.Drawing.Size(228, 407)
-        Me.Panel4.TabIndex = 1
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(75, 312)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(102, 32)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Login"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(273, 312)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(102, 32)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Reset"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.PictureBox_LogoAtas.Image = Global.App_Apotek.My.Resources.Resources.Logo_Pharmacie_780x560_removebg_preview
+        Me.PictureBox_LogoAtas.Location = New System.Drawing.Point(187, 9)
+        Me.PictureBox_LogoAtas.Name = "PictureBox_LogoAtas"
+        Me.PictureBox_LogoAtas.Size = New System.Drawing.Size(75, 75)
+        Me.PictureBox_LogoAtas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox_LogoAtas.TabIndex = 0
+        Me.PictureBox_LogoAtas.TabStop = False
         '
         'Form1
         '
@@ -235,33 +235,33 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
+        Me.Panel_Kiri.ResumeLayout(False)
+        Me.Panel_Kiri.PerformLayout()
+        CType(Me.PictureBox_LogoFarmasi, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_Kanan.ResumeLayout(False)
+        Me.Panel_Kanan.PerformLayout()
+        Me.Panel_InputPassword.ResumeLayout(False)
+        Me.Panel_InputPassword.PerformLayout()
+        Me.Panel_InputUsername.ResumeLayout(False)
+        Me.Panel_InputUsername.PerformLayout()
+        CType(Me.PictureBox_LogoAtas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents SplitContainer1 As SplitContainer
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox_LogoFarmasi As PictureBox
+    Friend WithEvents Label_NamaApp As Label
+    Friend WithEvents Panel_Kanan As Panel
+    Friend WithEvents PictureBox_LogoAtas As PictureBox
+    Friend WithEvents TextBox_Username As TextBox
     Friend WithEvents Label_Username As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Panel_InputUsername As Panel
+    Friend WithEvents Panel_InputPassword As Panel
+    Friend WithEvents TextBox_Password As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label_selamat_datang As Label
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Label_Silahkan As Label
+    Friend WithEvents Panel_Kiri As Panel
+    Friend WithEvents Button_Reset As Button
+    Friend WithEvents Button_Login As Button
 End Class
