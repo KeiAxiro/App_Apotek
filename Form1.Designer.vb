@@ -23,7 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.Panel_Kiri = New System.Windows.Forms.Panel()
         Me.PictureBox_LogoFarmasi = New System.Windows.Forms.PictureBox()
         Me.Label_NamaApp = New System.Windows.Forms.Label()
@@ -38,10 +37,6 @@ Partial Class Form1
         Me.TextBox_Username = New System.Windows.Forms.TextBox()
         Me.Label_Username = New System.Windows.Forms.Label()
         Me.PictureBox_LogoAtas = New System.Windows.Forms.PictureBox()
-        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer1.Panel1.SuspendLayout()
-        Me.SplitContainer1.Panel2.SuspendLayout()
-        Me.SplitContainer1.SuspendLayout()
         Me.Panel_Kiri.SuspendLayout()
         CType(Me.PictureBox_LogoFarmasi, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_Kanan.SuspendLayout()
@@ -50,27 +45,9 @@ Partial Class Form1
         CType(Me.PictureBox_LogoAtas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'SplitContainer1
-        '
-        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.IsSplitterFixed = True
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer1.Name = "SplitContainer1"
-        '
-        'SplitContainer1.Panel1
-        '
-        Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel_Kiri)
-        '
-        'SplitContainer1.Panel2
-        '
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel_Kanan)
-        Me.SplitContainer1.Size = New System.Drawing.Size(780, 407)
-        Me.SplitContainer1.SplitterDistance = 228
-        Me.SplitContainer1.TabIndex = 0
-        '
         'Panel_Kiri
         '
+        Me.Panel_Kiri.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Panel_Kiri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Panel_Kiri.Controls.Add(Me.PictureBox_LogoFarmasi)
         Me.Panel_Kiri.Controls.Add(Me.Label_NamaApp)
@@ -78,14 +55,14 @@ Partial Class Form1
         Me.Panel_Kiri.Location = New System.Drawing.Point(0, 0)
         Me.Panel_Kiri.Name = "Panel_Kiri"
         Me.Panel_Kiri.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Panel_Kiri.Size = New System.Drawing.Size(136, 407)
-        Me.Panel_Kiri.TabIndex = 0
+        Me.Panel_Kiri.Size = New System.Drawing.Size(233, 406)
+        Me.Panel_Kiri.TabIndex = 1
         '
         'PictureBox_LogoFarmasi
         '
         Me.PictureBox_LogoFarmasi.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox_LogoFarmasi.Image = CType(resources.GetObject("PictureBox_LogoFarmasi.Image"), System.Drawing.Image)
-        Me.PictureBox_LogoFarmasi.Location = New System.Drawing.Point(-3, 211)
+        Me.PictureBox_LogoFarmasi.Location = New System.Drawing.Point(45, 211)
         Me.PictureBox_LogoFarmasi.Name = "PictureBox_LogoFarmasi"
         Me.PictureBox_LogoFarmasi.Size = New System.Drawing.Size(138, 167)
         Me.PictureBox_LogoFarmasi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -99,10 +76,10 @@ Partial Class Form1
         Me.Label_NamaApp.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.Label_NamaApp.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_NamaApp.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label_NamaApp.Location = New System.Drawing.Point(8, 72)
+        Me.Label_NamaApp.Location = New System.Drawing.Point(56, 72)
         Me.Label_NamaApp.Name = "Label_NamaApp"
         Me.Label_NamaApp.Size = New System.Drawing.Size(127, 78)
-        Me.Label_NamaApp.TabIndex = 0
+        Me.Label_NamaApp.TabIndex = 1
         Me.Label_NamaApp.Text = "APLIKASI" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "APOTEK" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "XYZ"
         Me.Label_NamaApp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -117,11 +94,10 @@ Partial Class Form1
         Me.Panel_Kanan.Controls.Add(Me.Panel_InputPassword)
         Me.Panel_Kanan.Controls.Add(Me.Panel_InputUsername)
         Me.Panel_Kanan.Controls.Add(Me.PictureBox_LogoAtas)
-        Me.Panel_Kanan.Location = New System.Drawing.Point(49, 15)
+        Me.Panel_Kanan.Location = New System.Drawing.Point(285, 15)
         Me.Panel_Kanan.Name = "Panel_Kanan"
         Me.Panel_Kanan.Size = New System.Drawing.Size(450, 380)
         Me.Panel_Kanan.TabIndex = 0
-        Me.Panel_Kanan.TabStop = True
         '
         'Button_Reset
         '
@@ -129,7 +105,7 @@ Partial Class Form1
         Me.Button_Reset.Location = New System.Drawing.Point(273, 312)
         Me.Button_Reset.Name = "Button_Reset"
         Me.Button_Reset.Size = New System.Drawing.Size(102, 32)
-        Me.Button_Reset.TabIndex = 3
+        Me.Button_Reset.TabIndex = 4
         Me.Button_Reset.Text = "Reset"
         Me.Button_Reset.UseVisualStyleBackColor = True
         '
@@ -139,7 +115,7 @@ Partial Class Form1
         Me.Button_Login.Location = New System.Drawing.Point(75, 312)
         Me.Button_Login.Name = "Button_Login"
         Me.Button_Login.Size = New System.Drawing.Size(102, 32)
-        Me.Button_Login.TabIndex = 2
+        Me.Button_Login.TabIndex = 3
         Me.Button_Login.Text = "Login"
         Me.Button_Login.UseVisualStyleBackColor = True
         '
@@ -160,7 +136,7 @@ Partial Class Form1
         Me.Panel_InputPassword.Location = New System.Drawing.Point(75, 228)
         Me.Panel_InputPassword.Name = "Panel_InputPassword"
         Me.Panel_InputPassword.Size = New System.Drawing.Size(300, 58)
-        Me.Panel_InputPassword.TabIndex = 0
+        Me.Panel_InputPassword.TabIndex = 2
         '
         'TextBox_Password
         '
@@ -169,7 +145,8 @@ Partial Class Form1
         Me.TextBox_Password.Location = New System.Drawing.Point(0, 32)
         Me.TextBox_Password.Name = "TextBox_Password"
         Me.TextBox_Password.Size = New System.Drawing.Size(300, 23)
-        Me.TextBox_Password.TabIndex = 1
+        Me.TextBox_Password.TabIndex = 2
+        Me.TextBox_Password.UseSystemPasswordChar = True
         '
         'Label4
         '
@@ -179,7 +156,7 @@ Partial Class Form1
         Me.Label4.Margin = New System.Windows.Forms.Padding(0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(102, 23)
-        Me.Label4.TabIndex = 0
+        Me.Label4.TabIndex = 2
         Me.Label4.Text = "Password"
         '
         'Panel_InputUsername
@@ -189,7 +166,7 @@ Partial Class Form1
         Me.Panel_InputUsername.Location = New System.Drawing.Point(75, 164)
         Me.Panel_InputUsername.Name = "Panel_InputUsername"
         Me.Panel_InputUsername.Size = New System.Drawing.Size(300, 58)
-        Me.Panel_InputUsername.TabIndex = 0
+        Me.Panel_InputUsername.TabIndex = 1
         '
         'TextBox_Username
         '
@@ -198,7 +175,7 @@ Partial Class Form1
         Me.TextBox_Username.Location = New System.Drawing.Point(0, 32)
         Me.TextBox_Username.Name = "TextBox_Username"
         Me.TextBox_Username.Size = New System.Drawing.Size(300, 23)
-        Me.TextBox_Username.TabIndex = 0
+        Me.TextBox_Username.TabIndex = 1
         '
         'Label_Username
         '
@@ -208,7 +185,7 @@ Partial Class Form1
         Me.Label_Username.Margin = New System.Windows.Forms.Padding(0)
         Me.Label_Username.Name = "Label_Username"
         Me.Label_Username.Size = New System.Drawing.Size(105, 23)
-        Me.Label_Username.TabIndex = 0
+        Me.Label_Username.TabIndex = 2
         Me.Label_Username.Text = "Username" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'PictureBox_LogoAtas
@@ -218,7 +195,7 @@ Partial Class Form1
         Me.PictureBox_LogoAtas.Name = "PictureBox_LogoAtas"
         Me.PictureBox_LogoAtas.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox_LogoAtas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox_LogoAtas.TabIndex = 0
+        Me.PictureBox_LogoAtas.TabIndex = 7
         Me.PictureBox_LogoAtas.TabStop = False
         '
         'Form1
@@ -226,15 +203,12 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(780, 407)
-        Me.Controls.Add(Me.SplitContainer1)
+        Me.Controls.Add(Me.Panel_Kanan)
+        Me.Controls.Add(Me.Panel_Kiri)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Form Login Apotek"
-        Me.SplitContainer1.Panel1.ResumeLayout(False)
-        Me.SplitContainer1.Panel2.ResumeLayout(False)
-        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SplitContainer1.ResumeLayout(False)
         Me.Panel_Kiri.ResumeLayout(False)
         Me.Panel_Kiri.PerformLayout()
         CType(Me.PictureBox_LogoFarmasi, System.ComponentModel.ISupportInitialize).EndInit()
@@ -249,19 +223,33 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents SplitContainer1 As SplitContainer
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+    End Sub
+
+    Public Sub New()
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
+
+    Friend WithEvents Panel_Kiri As Panel
     Friend WithEvents PictureBox_LogoFarmasi As PictureBox
     Friend WithEvents Label_NamaApp As Label
     Friend WithEvents Panel_Kanan As Panel
-    Friend WithEvents PictureBox_LogoAtas As PictureBox
-    Friend WithEvents TextBox_Username As TextBox
-    Friend WithEvents Label_Username As Label
-    Friend WithEvents Panel_InputUsername As Panel
+    Friend WithEvents Button_Reset As Button
+    Friend WithEvents Button_Login As Button
+    Friend WithEvents Label_Silahkan As Label
     Friend WithEvents Panel_InputPassword As Panel
     Friend WithEvents TextBox_Password As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label_Silahkan As Label
-    Friend WithEvents Panel_Kiri As Panel
-    Friend WithEvents Button_Reset As Button
-    Friend WithEvents Button_Login As Button
+    Friend WithEvents Panel_InputUsername As Panel
+    Friend WithEvents TextBox_Username As TextBox
+    Friend WithEvents Label_Username As Label
+    Friend WithEvents PictureBox_LogoAtas As PictureBox
+
+
 End Class
