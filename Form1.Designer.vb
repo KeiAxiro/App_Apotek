@@ -61,7 +61,8 @@ Partial Class Form1
         'PictureBox_LogoFarmasi
         '
         Me.PictureBox_LogoFarmasi.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox_LogoFarmasi.Image = CType(resources.GetObject("PictureBox_LogoFarmasi.Image"), System.Drawing.Image)
+        Me.PictureBox_LogoFarmasi.BackgroundImage = Global.App_Apotek.My.Resources.Resources.apotek_portait
+        Me.PictureBox_LogoFarmasi.Image = Global.App_Apotek.My.Resources.Resources.apotek_portait
         Me.PictureBox_LogoFarmasi.Location = New System.Drawing.Point(45, 211)
         Me.PictureBox_LogoFarmasi.Name = "PictureBox_LogoFarmasi"
         Me.PictureBox_LogoFarmasi.Size = New System.Drawing.Size(138, 167)
@@ -140,6 +141,7 @@ Partial Class Form1
         '
         'TextBox_Password
         '
+        Me.TextBox_Password.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox_Password.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox_Password.Location = New System.Drawing.Point(0, 32)
@@ -170,6 +172,7 @@ Partial Class Form1
         '
         'TextBox_Username
         '
+        Me.TextBox_Username.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox_Username.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox_Username.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox_Username.Location = New System.Drawing.Point(0, 32)
