@@ -1,11 +1,18 @@
-﻿Class Form1
+﻿Imports System.Data.SqlClient
+
+Class Form1
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
     Private Sub Panel_Kanan_Paint(sender As Object, e As PaintEventArgs) Handles Panel_Kanan.Paint
         Dim Pen As New Pen(Color.FromArgb(255, 0, 200, 0), 15)
         Dim Gap As Integer = 50
         Dim Pwidth As Integer = Panel_Kanan.Width
+        Dim Pheight As Integer = Panel_Kanan.Height
         Using Pen
-            e.Graphics.DrawLine(Pen, New Point(0, Gap), New Point(0, Panel_Kanan.Height - Gap))
-            e.Graphics.DrawLine(Pen, New Point(Pwidth, Gap), New Point(Pwidth, Panel_Kanan.Height - Gap))
+            e.Graphics.DrawLine(Pen, New Point(0, Gap), New Point(0, Pheight - Gap))
+            e.Graphics.DrawLine(Pen, New Point(Pwidth, Gap), New Point(Pwidth, Pheight - Gap))
 
         End Using
     End Sub
@@ -16,7 +23,42 @@
     End Sub
 
     Private Sub Panel_InputUsername_Paint(sender As Object, e As PaintEventArgs) Handles Panel_InputUsername.Paint, Panel_InputPassword.Paint
+        Dim Pen As New Pen(Color.FromArgb(160, 0, 0, 0), 3)
+        Dim PWidth As Integer = Panel_InputUsername.Width
+        Dim Pheight As Integer = Panel_InputUsername.Height
+
+        Using Pen
+            e.Graphics.DrawLine(Pen, New Point(0, Pheight), New Point(PWidth, Pheight))
+        End Using
 
     End Sub
+
+    Private Sub Button_Login_Click(sender As Object, e As EventArgs) Handles Button_Login.Click
+        Call Login()
+    End Sub
+
+
+    Sub Login()
+        Call Koneksi()
+        Dim Login As String = "SELECT * FROM Tbl_User WHERE Username = @Username AND Password = @Password"
+        Dim Cmd As New SqlCommand(Login, Conn)
+        Cmd.Parameters.AddWithValue("@Username", TextBox_Username.Text)
+        Cmd.Parameters.AddWithValue("@Password", TextBox_Password.Text)
+
+        Srd = Cmd.ExecuteReader
+        If Srd.HasRows Then
+            Srd.Read()
+            MsgBox("Halo " & Srd.Item("Nama_User").ToString)
+        Else
+            MsgBox("Username Atau Password Salah!")
+        End If
+    End Sub
+
+    Private Sub TextBox_Password_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_Username.KeyPress, TextBox_Password.KeyPress
+        If e.KeyChar = Chr(13) Then
+            Call Login()
+        End If
+    End Sub
+
 
 End Class
