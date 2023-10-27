@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.Panel_Kiri = New System.Windows.Forms.Panel()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.PictureBox_LogoFarmasi = New System.Windows.Forms.PictureBox()
         Me.Label_NamaApp = New System.Windows.Forms.Label()
         Me.Panel_Kanan = New System.Windows.Forms.Panel()
@@ -37,7 +37,10 @@ Partial Class Form1
         Me.TextBox_Username = New System.Windows.Forms.TextBox()
         Me.Label_Username = New System.Windows.Forms.Label()
         Me.PictureBox_LogoAtas = New System.Windows.Forms.PictureBox()
-        Me.Panel_Kiri.SuspendLayout()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
         CType(Me.PictureBox_LogoFarmasi, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_Kanan.SuspendLayout()
         Me.Panel_InputPassword.SuspendLayout()
@@ -45,29 +48,35 @@ Partial Class Form1
         CType(Me.PictureBox_LogoAtas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel_Kiri
+        'SplitContainer1
         '
-        Me.Panel_Kiri.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Panel_Kiri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Panel_Kiri.Controls.Add(Me.PictureBox_LogoFarmasi)
-        Me.Panel_Kiri.Controls.Add(Me.Label_NamaApp)
-        Me.Panel_Kiri.Cursor = System.Windows.Forms.Cursors.No
-        Me.Panel_Kiri.Location = New System.Drawing.Point(0, 0)
-        Me.Panel_Kiri.Name = "Panel_Kiri"
-        Me.Panel_Kiri.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Panel_Kiri.Size = New System.Drawing.Size(233, 406)
-        Me.Panel_Kiri.TabIndex = 1
+        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer1.Name = "SplitContainer1"
+        '
+        'SplitContainer1.Panel1
+        '
+        Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox_LogoFarmasi)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Label_NamaApp)
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel_Kanan)
+        Me.SplitContainer1.Size = New System.Drawing.Size(780, 407)
+        Me.SplitContainer1.SplitterDistance = 193
+        Me.SplitContainer1.TabIndex = 1
         '
         'PictureBox_LogoFarmasi
         '
         Me.PictureBox_LogoFarmasi.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox_LogoFarmasi.BackgroundImage = Global.App_Apotek.My.Resources.Resources.apotek_portait
         Me.PictureBox_LogoFarmasi.Image = Global.App_Apotek.My.Resources.Resources.apotek_portait
-        Me.PictureBox_LogoFarmasi.Location = New System.Drawing.Point(45, 211)
+        Me.PictureBox_LogoFarmasi.Location = New System.Drawing.Point(27, 189)
         Me.PictureBox_LogoFarmasi.Name = "PictureBox_LogoFarmasi"
         Me.PictureBox_LogoFarmasi.Size = New System.Drawing.Size(138, 167)
         Me.PictureBox_LogoFarmasi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox_LogoFarmasi.TabIndex = 0
+        Me.PictureBox_LogoFarmasi.TabIndex = 2
         Me.PictureBox_LogoFarmasi.TabStop = False
         '
         'Label_NamaApp
@@ -77,10 +86,10 @@ Partial Class Form1
         Me.Label_NamaApp.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.Label_NamaApp.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_NamaApp.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label_NamaApp.Location = New System.Drawing.Point(56, 72)
+        Me.Label_NamaApp.Location = New System.Drawing.Point(38, 50)
         Me.Label_NamaApp.Name = "Label_NamaApp"
         Me.Label_NamaApp.Size = New System.Drawing.Size(127, 78)
-        Me.Label_NamaApp.TabIndex = 1
+        Me.Label_NamaApp.TabIndex = 3
         Me.Label_NamaApp.Text = "APLIKASI" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "APOTEK" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "XYZ"
         Me.Label_NamaApp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -95,10 +104,10 @@ Partial Class Form1
         Me.Panel_Kanan.Controls.Add(Me.Panel_InputPassword)
         Me.Panel_Kanan.Controls.Add(Me.Panel_InputUsername)
         Me.Panel_Kanan.Controls.Add(Me.PictureBox_LogoAtas)
-        Me.Panel_Kanan.Location = New System.Drawing.Point(285, 15)
+        Me.Panel_Kanan.Location = New System.Drawing.Point(66, 13)
         Me.Panel_Kanan.Name = "Panel_Kanan"
         Me.Panel_Kanan.Size = New System.Drawing.Size(450, 380)
-        Me.Panel_Kanan.TabIndex = 0
+        Me.Panel_Kanan.TabIndex = 1
         '
         'Button_Reset
         '
@@ -206,14 +215,16 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(780, 407)
-        Me.Controls.Add(Me.Panel_Kanan)
-        Me.Controls.Add(Me.Panel_Kiri)
+        Me.Controls.Add(Me.SplitContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Form Login Apotek"
-        Me.Panel_Kiri.ResumeLayout(False)
-        Me.Panel_Kiri.PerformLayout()
+        Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel1.PerformLayout()
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
         CType(Me.PictureBox_LogoFarmasi, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_Kanan.ResumeLayout(False)
         Me.Panel_Kanan.PerformLayout()
@@ -239,7 +250,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Panel_Kiri As Panel
+    Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents PictureBox_LogoFarmasi As PictureBox
     Friend WithEvents Label_NamaApp As Label
     Friend WithEvents Panel_Kanan As Panel
@@ -253,6 +264,5 @@ Partial Class Form1
     Friend WithEvents TextBox_Username As TextBox
     Friend WithEvents Label_Username As Label
     Friend WithEvents PictureBox_LogoAtas As PictureBox
-
 
 End Class

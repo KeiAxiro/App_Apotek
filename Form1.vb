@@ -48,13 +48,19 @@ Class Form1
         Srd = Cmd.ExecuteReader
         If Srd.HasRows Then
             Srd.Read()
-            MsgBox("Halo " & Srd.Item("Nama_User").ToString)
+            Dim Tipe_User As String = Srd.Item("Tipe_User")
+            If Tipe_User = "ADMIN" Then
+                Form_Admin.Show()
+            ElseIf Tipe_User = "APOTEKER" Then
+
+            ElseIf Tipe_User = "KASIR" Then
+            End If
         Else
             MsgBox("Username Atau Password Salah!")
         End If
     End Sub
 
-    Private Sub TextBox_Password_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_Username.KeyPress, TextBox_Password.KeyPress
+    Private Sub TextBox_Password_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_Password.KeyPress, TextBox_Username.KeyPress
         If e.KeyChar = Chr(13) Then
             Call Login()
         End If
