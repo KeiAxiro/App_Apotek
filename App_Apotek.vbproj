@@ -87,6 +87,18 @@
     <Compile Include="Form_Admin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_Admin_KelolaUser.Designer.vb">
+      <DependentUpon>Form_Admin_KelolaUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Admin_KelolaUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin_LogActivity.Designer.vb">
+      <DependentUpon>Form_Admin_LogActivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Admin_LogActivity.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module_Db_Connection.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -110,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Admin.resx">
       <DependentUpon>Form_Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Admin_LogActivity.resx">
+      <DependentUpon>Form_Admin_LogActivity.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -135,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo-Pharmacie-780x560-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ryo_Yamada.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
