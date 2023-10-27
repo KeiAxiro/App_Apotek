@@ -36,6 +36,9 @@ Partial Class Form_Admin
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        '
+        'SplitContainer1.Panel2
+        '
         Me.SplitContainer1.Size = New System.Drawing.Size(784, 411)
         Me.SplitContainer1.SplitterDistance = 194
         Me.SplitContainer1.TabIndex = 0
