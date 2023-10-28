@@ -123,6 +123,9 @@
     <EmbeddedResource Include="Form_Admin.resx">
       <DependentUpon>Form_Admin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_Admin_KelolaUser.resx">
+      <DependentUpon>Form_Admin_KelolaUser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Admin_LogActivity.resx">
       <DependentUpon>Form_Admin_LogActivity.vb</DependentUpon>
     </EmbeddedResource>

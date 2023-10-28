@@ -50,7 +50,7 @@ Class Form1
             Srd.Read()
             Dim Tipe_User As String = Srd.Item("Tipe_User")
             If Tipe_User = "ADMIN" Then
-                Form_Admin.Show()
+                Form_Admin.ShowDialog()
             ElseIf Tipe_User = "APOTEKER" Then
 
             ElseIf Tipe_User = "KASIR" Then
