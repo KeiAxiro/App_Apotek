@@ -157,6 +157,7 @@ Partial Class Form1
         Me.TextBox_Password.Name = "TextBox_Password"
         Me.TextBox_Password.Size = New System.Drawing.Size(300, 23)
         Me.TextBox_Password.TabIndex = 2
+        Me.TextBox_Password.Text = "kei"
         Me.TextBox_Password.UseSystemPasswordChar = True
         '
         'Label4
@@ -188,6 +189,7 @@ Partial Class Form1
         Me.TextBox_Username.Name = "TextBox_Username"
         Me.TextBox_Username.Size = New System.Drawing.Size(300, 23)
         Me.TextBox_Username.TabIndex = 1
+        Me.TextBox_Username.Text = "kei"
         '
         'Label_Username
         '

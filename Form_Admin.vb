@@ -26,19 +26,17 @@
     Public Sub ChangeChildPanel(ByVal panel As Panel, ByVal newChild As Panel)
 
         ' Sembunyikan panel anak saat ini
-        panel.Controls.Remove(panel)
-
-        ' Tampilkan panel anak baru
-
+        panel.Controls.Clear()
+        ' Tampilkan panel anak 
         panel.Controls.Add(newChild)
-
+        newChild.BringToFront()
         ' Set focus ke panel anak baru
         newChild.Focus()
 
     End Sub
 
     Private Sub Button_KelolaUser_Click(sender As Object, e As EventArgs) Handles Button_KelolaUser.Click
-
+        ChangeChildPanel(Panel_Kanan, Form_Admin_KelolaUser.Panel_KelolaUser)
     End Sub
 
 

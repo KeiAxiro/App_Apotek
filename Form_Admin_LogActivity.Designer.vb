@@ -23,13 +23,13 @@ Partial Class Form_Admin_LogActivity
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel_Log = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button_Load = New System.Windows.Forms.Button()
+        Me.DateTimePicker_Log = New System.Windows.Forms.DateTimePicker()
+        Me.DataGridView_Log = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel_Log.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView_Log, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel_Log
@@ -37,46 +37,15 @@ Partial Class Form_Admin_LogActivity
         Me.Panel_Log.AutoSize = True
         Me.Panel_Log.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Panel_Log.Controls.Add(Me.Label2)
-        Me.Panel_Log.Controls.Add(Me.Button1)
-        Me.Panel_Log.Controls.Add(Me.DateTimePicker1)
-        Me.Panel_Log.Controls.Add(Me.DataGridView1)
+        Me.Panel_Log.Controls.Add(Me.Button_Load)
+        Me.Panel_Log.Controls.Add(Me.DateTimePicker_Log)
+        Me.Panel_Log.Controls.Add(Me.DataGridView_Log)
         Me.Panel_Log.Controls.Add(Me.Label1)
         Me.Panel_Log.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_Log.Location = New System.Drawing.Point(0, 0)
         Me.Panel_Log.Name = "Panel_Log"
         Me.Panel_Log.Size = New System.Drawing.Size(781, 414)
         Me.Panel_Log.TabIndex = 0
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Button1.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button1.Location = New System.Drawing.Point(512, 372)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(86, 28)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Load"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(290, 377)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 7
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(10, 47)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(760, 305)
-        Me.DataGridView1.TabIndex = 6
         '
         'Label2
         '
@@ -89,6 +58,38 @@ Partial Class Form_Admin_LogActivity
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Tampilkan Per"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button_Load
+        '
+        Me.Button_Load.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Button_Load.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.Button_Load.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button_Load.Location = New System.Drawing.Point(512, 372)
+        Me.Button_Load.Name = "Button_Load"
+        Me.Button_Load.Size = New System.Drawing.Size(86, 28)
+        Me.Button_Load.TabIndex = 8
+        Me.Button_Load.Text = "Load"
+        Me.Button_Load.UseVisualStyleBackColor = False
+        '
+        'DateTimePicker_Log
+        '
+        Me.DateTimePicker_Log.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.DateTimePicker_Log.Location = New System.Drawing.Point(290, 377)
+        Me.DateTimePicker_Log.Name = "DateTimePicker_Log"
+        Me.DateTimePicker_Log.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker_Log.TabIndex = 7
+        '
+        'DataGridView_Log
+        '
+        Me.DataGridView_Log.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView_Log.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView_Log.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView_Log.Location = New System.Drawing.Point(10, 47)
+        Me.DataGridView_Log.Name = "DataGridView_Log"
+        Me.DataGridView_Log.Size = New System.Drawing.Size(760, 305)
+        Me.DataGridView_Log.TabIndex = 6
         '
         'Label1
         '
@@ -112,16 +113,16 @@ Partial Class Form_Admin_LogActivity
         Me.Text = "Form_Admin_LogActivity"
         Me.Panel_Log.ResumeLayout(False)
         Me.Panel_Log.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView_Log, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Panel_Log As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button_Load As Button
+    Friend WithEvents DateTimePicker_Log As DateTimePicker
+    Friend WithEvents DataGridView_Log As DataGridView
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
 End Class

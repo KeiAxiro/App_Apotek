@@ -27,13 +27,11 @@ Partial Class Form_Admin_KelolaUser
         '
         'Panel_KelolaUser
         '
-        Me.Panel_KelolaUser.AutoSize = True
-        Me.Panel_KelolaUser.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Panel_KelolaUser.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_KelolaUser.Location = New System.Drawing.Point(0, 0)
         Me.Panel_KelolaUser.Name = "Panel_KelolaUser"
         Me.Panel_KelolaUser.Size = New System.Drawing.Size(784, 411)
-        Me.Panel_KelolaUser.TabIndex = 1
+        Me.Panel_KelolaUser.TabIndex = 0
         '
         'Form_Admin_KelolaUser
         '
@@ -44,7 +42,6 @@ Partial Class Form_Admin_KelolaUser
         Me.Name = "Form_Admin_KelolaUser"
         Me.Text = "Form_Admin_KelolaUser"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
