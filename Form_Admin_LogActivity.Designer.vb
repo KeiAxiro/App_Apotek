@@ -88,6 +88,7 @@ Partial Class Form_Admin_LogActivity
         Me.DataGridView_Log.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView_Log.Location = New System.Drawing.Point(10, 47)
         Me.DataGridView_Log.Name = "DataGridView_Log"
+        Me.DataGridView_Log.ReadOnly = True
         Me.DataGridView_Log.Size = New System.Drawing.Size(760, 305)
         Me.DataGridView_Log.TabIndex = 6
         '
@@ -95,7 +96,7 @@ Partial Class Form_Admin_LogActivity
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(343, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(116, 24)

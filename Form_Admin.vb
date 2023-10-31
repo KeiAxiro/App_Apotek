@@ -36,7 +36,7 @@
     End Sub
 
     Private Sub Button_KelolaUser_Click(sender As Object, e As EventArgs) Handles Button_KelolaUser.Click
-        ChangeChildPanel(Panel_Kanan, Form_Admin_KelolaUser.Panel_KelolaUser)
+        ChangeChildPanel(Panel_Kanan, Form_Admin_KelolaUser.Panel_KelolaUser_Container)
     End Sub
 
 
