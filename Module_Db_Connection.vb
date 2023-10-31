@@ -9,8 +9,8 @@ Module Module_Db_Connection
     Public Ds As DataSet
 
     Sub Koneksi()
-        MyDB = "Data Source=desktop-ig5qtru\sqlexpress;User ID=keidjaru;Password=kei;initial catalog=Db_Apotek;Connect Timeout=30;Encrypt=False;"
-        'MyDB = "Data Source=DESKTOP-34EMTUJ;User ID=keidjaru;Password=kei;initial catalog=Db_Apotek;Connect Timeout=30;Encrypt=False;"
+        'MyDB = "Data Source=desktop-ig5qtru\sqlexpress;User ID=keidjaru;Password=kei;initial catalog=Db_Apotek;Connect Timeout=30;Encrypt=False;"
+        MyDB = "Data Source=DESKTOP-34EMTUJ;User ID=keidjaru;Password=kei;initial catalog=Db_Apotek;Connect Timeout=30;Encrypt=False;"
 
         Conn = New SqlConnection(MyDB)
         If Conn.State = ConnectionState.Closed Then
