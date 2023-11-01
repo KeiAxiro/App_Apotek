@@ -1,30 +1,9 @@
 ﻿Public Class Form_Admin_KelolaUser
-
     Private Sub Form_Admin_KelolaUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        SplitContainer1.SplitterDistance = Panel_KelolaUser_Container.Width / 2
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub Panel_Nama_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label_TipeUser_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub SplitContainer1_SplitterMoved(sender As Object, e As SplitterEventArgs) Handles SplitContainer1.SplitterMoved
-
+    Private Sub SplitContainer1_SplitterPaint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Paint
+        Dim Pen As 
     End Sub
 End Class

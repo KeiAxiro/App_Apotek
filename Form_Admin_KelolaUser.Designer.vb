@@ -22,339 +22,415 @@ Partial Class Form_Admin_KelolaUser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel_KelolaUser_Container = New System.Windows.Forms.Panel()
+        Me.Label_KelolaUser = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.Panel_Input_Kiri = New System.Windows.Forms.Panel()
-        Me.Panel_Telepon = New System.Windows.Forms.Panel()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel_Nama = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel_TipeUser = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.TextBox_KelolaUser_Telepon = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel_KelolaUser_TipeUser = New System.Windows.Forms.Panel()
         Me.ComboBox_KelolaUser_TipeUser = New System.Windows.Forms.ComboBox()
-        Me.Label_TipeUser = New System.Windows.Forms.Label()
-        Me.Panel_Input_Kanan = New System.Windows.Forms.Panel()
-        Me.Panel_Alamat = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label_Alamat = New System.Windows.Forms.Label()
-        Me.Panel_Password = New System.Windows.Forms.Panel()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Panel_Username = New System.Windows.Forms.Panel()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel_KelolaUser_Nama = New System.Windows.Forms.Panel()
+        Me.TextBox_KelolaUser_NamaUser = New System.Windows.Forms.TextBox()
+        Me.Label_Nama = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.TextBox_KelolaUser_Password = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TextBox_KelolaUser_Alamat = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.TextBox_KelolaUser_Username = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel_KelolaUser_Container.SuspendLayout()
+        Me.Panel_KelolaUser_Container = New System.Windows.Forms.Panel()
+        Me.TextBox_KelolaUser_CariUser = New System.Windows.Forms.TextBox()
+        Me.Label_KelolaUser_Cari = New System.Windows.Forms.Label()
+        Me.Button_KelolaUser_Hapus = New System.Windows.Forms.Button()
+        Me.Button_KelolaUser_Edit = New System.Windows.Forms.Button()
+        Me.Button_KelolaUser_Tambah = New System.Windows.Forms.Button()
+        Me.DataGridView_KelolaUSer = New System.Windows.Forms.DataGridView()
+        Me.Panel1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
-        Me.Panel_Input_Kiri.SuspendLayout()
-        Me.Panel_Telepon.SuspendLayout()
-        Me.Panel_Nama.SuspendLayout()
-        Me.Panel_TipeUser.SuspendLayout()
-        Me.Panel_Input_Kanan.SuspendLayout()
-        Me.Panel_Alamat.SuspendLayout()
-        Me.Panel_Password.SuspendLayout()
-        Me.Panel_Username.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.Panel_KelolaUser_TipeUser.SuspendLayout()
+        Me.Panel_KelolaUser_Nama.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel_KelolaUser_Container.SuspendLayout()
+        CType(Me.DataGridView_KelolaUSer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'Label_KelolaUser
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(-398, -1)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(784, 23)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Kelola User"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label_KelolaUser.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label_KelolaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_KelolaUser.Location = New System.Drawing.Point(0, 0)
+        Me.Label_KelolaUser.Name = "Label_KelolaUser"
+        Me.Label_KelolaUser.Size = New System.Drawing.Size(736, 22)
+        Me.Label_KelolaUser.TabIndex = 2
+        Me.Label_KelolaUser.Text = "Kelola User"
+        Me.Label_KelolaUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Panel_KelolaUser_Container
+        'Panel1
         '
-        Me.Panel_KelolaUser_Container.Controls.Add(Me.SplitContainer1)
-        Me.Panel_KelolaUser_Container.Location = New System.Drawing.Point(4, 45)
-        Me.Panel_KelolaUser_Container.Name = "Panel_KelolaUser_Container"
-        Me.Panel_KelolaUser_Container.Size = New System.Drawing.Size(657, 294)
-        Me.Panel_KelolaUser_Container.TabIndex = 3
+        Me.Panel1.Controls.Add(Me.SplitContainer1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 22)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(736, 160)
+        Me.Panel1.TabIndex = 3
         '
         'SplitContainer1
         '
-        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.SplitContainer1.BackColor = System.Drawing.SystemColors.Control
+        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.IsSplitterFixed = True
         Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
         '
-        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel_Input_Kiri)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel7)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel_KelolaUser_TipeUser)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel_KelolaUser_Nama)
         '
         'SplitContainer1.Panel2
         '
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel_Input_Kanan)
-        Me.SplitContainer1.Size = New System.Drawing.Size(657, 207)
-        Me.SplitContainer1.SplitterDistance = 328
-        Me.SplitContainer1.TabIndex = 3
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel5)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel3)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel4)
+        Me.SplitContainer1.Size = New System.Drawing.Size(736, 160)
+        Me.SplitContainer1.SplitterDistance = 358
+        Me.SplitContainer1.SplitterWidth = 10
+        Me.SplitContainer1.TabIndex = 0
         '
-        'Panel_Input_Kiri
+        'Panel7
         '
-        Me.Panel_Input_Kiri.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.Panel7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_Input_Kiri.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel_Input_Kiri.Controls.Add(Me.Panel_Telepon)
-        Me.Panel_Input_Kiri.Controls.Add(Me.Panel_Nama)
-        Me.Panel_Input_Kiri.Controls.Add(Me.Panel_TipeUser)
-        Me.Panel_Input_Kiri.Location = New System.Drawing.Point(1, 1)
-        Me.Panel_Input_Kiri.Name = "Panel_Input_Kiri"
-        Me.Panel_Input_Kiri.Size = New System.Drawing.Size(324, 202)
-        Me.Panel_Input_Kiri.TabIndex = 1
+        Me.Panel7.Controls.Add(Me.TextBox_KelolaUser_Telepon)
+        Me.Panel7.Controls.Add(Me.Label6)
+        Me.Panel7.Location = New System.Drawing.Point(0, 106)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(358, 52)
+        Me.Panel7.TabIndex = 4
         '
-        'Panel_Telepon
+        'TextBox_KelolaUser_Telepon
         '
-        Me.Panel_Telepon.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_Telepon.Controls.Add(Me.TextBox4)
-        Me.Panel_Telepon.Controls.Add(Me.Label4)
-        Me.Panel_Telepon.Location = New System.Drawing.Point(0, 134)
-        Me.Panel_Telepon.Name = "Panel_Telepon"
-        Me.Panel_Telepon.Size = New System.Drawing.Size(326, 67)
-        Me.Panel_Telepon.TabIndex = 0
+        Me.TextBox_KelolaUser_Telepon.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox_KelolaUser_Telepon.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_KelolaUser_Telepon.Location = New System.Drawing.Point(4, 22)
+        Me.TextBox_KelolaUser_Telepon.Name = "TextBox_KelolaUser_Telepon"
+        Me.TextBox_KelolaUser_Telepon.Size = New System.Drawing.Size(351, 26)
+        Me.TextBox_KelolaUser_Telepon.TabIndex = 6
         '
-        'TextBox4
+        'Label6
         '
-        Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(15, 32)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(299, 26)
-        Me.TextBox4.TabIndex = 1
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(1, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(61, 18)
+        Me.Label6.TabIndex = 5
+        Me.Label6.Text = "Telepon"
         '
-        'Label4
+        'Panel_KelolaUser_TipeUser
         '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 4)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(60, 18)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Telepon"
-        '
-        'Panel_Nama
-        '
-        Me.Panel_Nama.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_Nama.Controls.Add(Me.TextBox2)
-        Me.Panel_Nama.Controls.Add(Me.Label2)
-        Me.Panel_Nama.Location = New System.Drawing.Point(0, 67)
-        Me.Panel_Nama.Name = "Panel_Nama"
-        Me.Panel_Nama.Size = New System.Drawing.Size(326, 67)
-        Me.Panel_Nama.TabIndex = 0
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(15, 32)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(299, 26)
-        Me.TextBox2.TabIndex = 1
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 4)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 18)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Nama"
-        '
-        'Panel_TipeUser
-        '
-        Me.Panel_TipeUser.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_TipeUser.Controls.Add(Me.ComboBox_KelolaUser_TipeUser)
-        Me.Panel_TipeUser.Controls.Add(Me.Label_TipeUser)
-        Me.Panel_TipeUser.Location = New System.Drawing.Point(0, 0)
-        Me.Panel_TipeUser.Name = "Panel_TipeUser"
-        Me.Panel_TipeUser.Size = New System.Drawing.Size(326, 67)
-        Me.Panel_TipeUser.TabIndex = 0
+        Me.Panel_KelolaUser_TipeUser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel_KelolaUser_TipeUser.Controls.Add(Me.ComboBox_KelolaUser_TipeUser)
+        Me.Panel_KelolaUser_TipeUser.Controls.Add(Me.Label1)
+        Me.Panel_KelolaUser_TipeUser.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_KelolaUser_TipeUser.Name = "Panel_KelolaUser_TipeUser"
+        Me.Panel_KelolaUser_TipeUser.Size = New System.Drawing.Size(358, 52)
+        Me.Panel_KelolaUser_TipeUser.TabIndex = 4
         '
         'ComboBox_KelolaUser_TipeUser
         '
-        Me.ComboBox_KelolaUser_TipeUser.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox_KelolaUser_TipeUser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ComboBox_KelolaUser_TipeUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox_KelolaUser_TipeUser.FormattingEnabled = True
-        Me.ComboBox_KelolaUser_TipeUser.Location = New System.Drawing.Point(15, 30)
+        Me.ComboBox_KelolaUser_TipeUser.Location = New System.Drawing.Point(4, 22)
         Me.ComboBox_KelolaUser_TipeUser.Name = "ComboBox_KelolaUser_TipeUser"
-        Me.ComboBox_KelolaUser_TipeUser.Size = New System.Drawing.Size(299, 28)
-        Me.ComboBox_KelolaUser_TipeUser.TabIndex = 1
+        Me.ComboBox_KelolaUser_TipeUser.Size = New System.Drawing.Size(351, 28)
+        Me.ComboBox_KelolaUser_TipeUser.TabIndex = 6
         '
-        'Label_TipeUser
+        'Label1
         '
-        Me.Label_TipeUser.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label_TipeUser.AutoSize = True
-        Me.Label_TipeUser.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_TipeUser.Location = New System.Drawing.Point(12, 4)
-        Me.Label_TipeUser.Name = "Label_TipeUser"
-        Me.Label_TipeUser.Size = New System.Drawing.Size(71, 18)
-        Me.Label_TipeUser.TabIndex = 0
-        Me.Label_TipeUser.Text = "Tipe User"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(1, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(72, 18)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Tipe User"
         '
-        'Panel_Input_Kanan
+        'Panel_KelolaUser_Nama
         '
-        Me.Panel_Input_Kanan.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.Panel_KelolaUser_Nama.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_Input_Kanan.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel_Input_Kanan.Controls.Add(Me.Panel_Alamat)
-        Me.Panel_Input_Kanan.Controls.Add(Me.Panel_Password)
-        Me.Panel_Input_Kanan.Controls.Add(Me.Panel_Username)
-        Me.Panel_Input_Kanan.Location = New System.Drawing.Point(0, 0)
-        Me.Panel_Input_Kanan.Name = "Panel_Input_Kanan"
-        Me.Panel_Input_Kanan.Size = New System.Drawing.Size(323, 202)
-        Me.Panel_Input_Kanan.TabIndex = 1
+        Me.Panel_KelolaUser_Nama.Controls.Add(Me.TextBox_KelolaUser_NamaUser)
+        Me.Panel_KelolaUser_Nama.Controls.Add(Me.Label_Nama)
+        Me.Panel_KelolaUser_Nama.Location = New System.Drawing.Point(0, 53)
+        Me.Panel_KelolaUser_Nama.Name = "Panel_KelolaUser_Nama"
+        Me.Panel_KelolaUser_Nama.Size = New System.Drawing.Size(358, 52)
+        Me.Panel_KelolaUser_Nama.TabIndex = 4
         '
-        'Panel_Alamat
+        'TextBox_KelolaUser_NamaUser
         '
-        Me.Panel_Alamat.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_Alamat.Controls.Add(Me.Label1)
-        Me.Panel_Alamat.Controls.Add(Me.TextBox1)
-        Me.Panel_Alamat.Controls.Add(Me.Label_Alamat)
-        Me.Panel_Alamat.Location = New System.Drawing.Point(1, 1)
-        Me.Panel_Alamat.Name = "Panel_Alamat"
-        Me.Panel_Alamat.Size = New System.Drawing.Size(324, 67)
-        Me.Panel_Alamat.TabIndex = 0
+        Me.TextBox_KelolaUser_NamaUser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox_KelolaUser_NamaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_KelolaUser_NamaUser.Location = New System.Drawing.Point(4, 22)
+        Me.TextBox_KelolaUser_NamaUser.Name = "TextBox_KelolaUser_NamaUser"
+        Me.TextBox_KelolaUser_NamaUser.Size = New System.Drawing.Size(351, 26)
+        Me.TextBox_KelolaUser_NamaUser.TabIndex = 6
         '
-        'TextBox1
+        'Label_Nama
         '
-        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(15, 32)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(297, 26)
-        Me.TextBox1.TabIndex = 1
+        Me.Label_Nama.AutoSize = True
+        Me.Label_Nama.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_Nama.Location = New System.Drawing.Point(1, 0)
+        Me.Label_Nama.Name = "Label_Nama"
+        Me.Label_Nama.Size = New System.Drawing.Size(84, 18)
+        Me.Label_Nama.TabIndex = 5
+        Me.Label_Nama.Text = "Nama User"
         '
-        'Label_Alamat
+        'Panel5
         '
-        Me.Label_Alamat.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label_Alamat.AutoSize = True
-        Me.Label_Alamat.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_Alamat.Location = New System.Drawing.Point(12, 4)
-        Me.Label_Alamat.Name = "Label_Alamat"
-        Me.Label_Alamat.Size = New System.Drawing.Size(53, 18)
-        Me.Label_Alamat.TabIndex = 0
-        Me.Label_Alamat.Text = "Alamat"
+        Me.Panel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel5.Controls.Add(Me.TextBox_KelolaUser_Password)
+        Me.Panel5.Controls.Add(Me.Label4)
+        Me.Panel5.Location = New System.Drawing.Point(1, 106)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(364, 52)
+        Me.Panel5.TabIndex = 4
         '
-        'Panel_Password
+        'TextBox_KelolaUser_Password
         '
-        Me.Panel_Password.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_Password.Controls.Add(Me.TextBox5)
-        Me.Panel_Password.Controls.Add(Me.Label5)
-        Me.Panel_Password.Location = New System.Drawing.Point(1, 135)
-        Me.Panel_Password.Name = "Panel_Password"
-        Me.Panel_Password.Size = New System.Drawing.Size(324, 67)
-        Me.Panel_Password.TabIndex = 0
+        Me.TextBox_KelolaUser_Password.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox_KelolaUser_Password.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_KelolaUser_Password.Location = New System.Drawing.Point(4, 22)
+        Me.TextBox_KelolaUser_Password.Name = "TextBox_KelolaUser_Password"
+        Me.TextBox_KelolaUser_Password.Size = New System.Drawing.Size(357, 26)
+        Me.TextBox_KelolaUser_Password.TabIndex = 6
         '
-        'TextBox5
+        'Label4
         '
-        Me.TextBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(15, 32)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(297, 26)
-        Me.TextBox5.TabIndex = 1
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(1, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(75, 18)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "Password"
         '
-        'Label5
+        'Panel3
         '
-        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 4)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 18)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Password"
+        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel3.Controls.Add(Me.TextBox_KelolaUser_Alamat)
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Location = New System.Drawing.Point(1, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(364, 52)
+        Me.Panel3.TabIndex = 4
         '
-        'Panel_Username
+        'TextBox_KelolaUser_Alamat
         '
-        Me.Panel_Username.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_Username.Controls.Add(Me.TextBox3)
-        Me.Panel_Username.Controls.Add(Me.Label3)
-        Me.Panel_Username.Location = New System.Drawing.Point(1, 68)
-        Me.Panel_Username.Name = "Panel_Username"
-        Me.Panel_Username.Size = New System.Drawing.Size(324, 67)
-        Me.Panel_Username.TabIndex = 0
+        Me.TextBox_KelolaUser_Alamat.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox_KelolaUser_Alamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_KelolaUser_Alamat.Location = New System.Drawing.Point(4, 22)
+        Me.TextBox_KelolaUser_Alamat.Name = "TextBox_KelolaUser_Alamat"
+        Me.TextBox_KelolaUser_Alamat.Size = New System.Drawing.Size(357, 26)
+        Me.TextBox_KelolaUser_Alamat.TabIndex = 6
         '
-        'TextBox3
+        'Label2
         '
-        Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(15, 32)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(297, 26)
-        Me.TextBox3.TabIndex = 1
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(1, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(53, 18)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Alamat"
+        '
+        'Panel4
+        '
+        Me.Panel4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel4.Controls.Add(Me.TextBox_KelolaUser_Username)
+        Me.Panel4.Controls.Add(Me.Label3)
+        Me.Panel4.Location = New System.Drawing.Point(1, 53)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(364, 52)
+        Me.Panel4.TabIndex = 4
+        '
+        'TextBox_KelolaUser_Username
+        '
+        Me.TextBox_KelolaUser_Username.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox_KelolaUser_Username.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_KelolaUser_Username.Location = New System.Drawing.Point(4, 22)
+        Me.TextBox_KelolaUser_Username.Name = "TextBox_KelolaUser_Username"
+        Me.TextBox_KelolaUser_Username.Size = New System.Drawing.Size(357, 26)
+        Me.TextBox_KelolaUser_Username.TabIndex = 6
         '
         'Label3
         '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 4)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(1, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 18)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Username"
+        Me.Label3.Size = New System.Drawing.Size(84, 18)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "User Name"
+        '
+        'Panel_KelolaUser_Container
+        '
+        Me.Panel_KelolaUser_Container.Controls.Add(Me.DataGridView_KelolaUSer)
+        Me.Panel_KelolaUser_Container.Controls.Add(Me.TextBox_KelolaUser_CariUser)
+        Me.Panel_KelolaUser_Container.Controls.Add(Me.Label_KelolaUser_Cari)
+        Me.Panel_KelolaUser_Container.Controls.Add(Me.Button_KelolaUser_Hapus)
+        Me.Panel_KelolaUser_Container.Controls.Add(Me.Button_KelolaUser_Edit)
+        Me.Panel_KelolaUser_Container.Controls.Add(Me.Button_KelolaUser_Tambah)
+        Me.Panel_KelolaUser_Container.Controls.Add(Me.Panel1)
+        Me.Panel_KelolaUser_Container.Controls.Add(Me.Label_KelolaUser)
+        Me.Panel_KelolaUser_Container.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_KelolaUser_Container.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_KelolaUser_Container.Name = "Panel_KelolaUser_Container"
+        Me.Panel_KelolaUser_Container.Size = New System.Drawing.Size(736, 348)
+        Me.Panel_KelolaUser_Container.TabIndex = 0
+        '
+        'TextBox_KelolaUser_CariUser
+        '
+        Me.TextBox_KelolaUser_CariUser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox_KelolaUser_CariUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_KelolaUser_CariUser.Location = New System.Drawing.Point(425, 197)
+        Me.TextBox_KelolaUser_CariUser.Name = "TextBox_KelolaUser_CariUser"
+        Me.TextBox_KelolaUser_CariUser.Size = New System.Drawing.Size(299, 29)
+        Me.TextBox_KelolaUser_CariUser.TabIndex = 6
+        '
+        'Label_KelolaUser_Cari
+        '
+        Me.Label_KelolaUser_Cari.AutoSize = True
+        Me.Label_KelolaUser_Cari.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_KelolaUser_Cari.Location = New System.Drawing.Point(344, 200)
+        Me.Label_KelolaUser_Cari.Name = "Label_KelolaUser_Cari"
+        Me.Label_KelolaUser_Cari.Size = New System.Drawing.Size(75, 20)
+        Me.Label_KelolaUser_Cari.TabIndex = 5
+        Me.Label_KelolaUser_Cari.Text = "Cari User"
+        '
+        'Button_KelolaUser_Hapus
+        '
+        Me.Button_KelolaUser_Hapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_KelolaUser_Hapus.Location = New System.Drawing.Point(230, 191)
+        Me.Button_KelolaUser_Hapus.Name = "Button_KelolaUser_Hapus"
+        Me.Button_KelolaUser_Hapus.Size = New System.Drawing.Size(107, 35)
+        Me.Button_KelolaUser_Hapus.TabIndex = 4
+        Me.Button_KelolaUser_Hapus.Text = "Hapus"
+        Me.Button_KelolaUser_Hapus.UseVisualStyleBackColor = True
+        '
+        'Button_KelolaUser_Edit
+        '
+        Me.Button_KelolaUser_Edit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_KelolaUser_Edit.Location = New System.Drawing.Point(117, 191)
+        Me.Button_KelolaUser_Edit.Name = "Button_KelolaUser_Edit"
+        Me.Button_KelolaUser_Edit.Size = New System.Drawing.Size(107, 35)
+        Me.Button_KelolaUser_Edit.TabIndex = 4
+        Me.Button_KelolaUser_Edit.Text = "Edit"
+        Me.Button_KelolaUser_Edit.UseVisualStyleBackColor = True
+        '
+        'Button_KelolaUser_Tambah
+        '
+        Me.Button_KelolaUser_Tambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_KelolaUser_Tambah.Location = New System.Drawing.Point(4, 191)
+        Me.Button_KelolaUser_Tambah.Name = "Button_KelolaUser_Tambah"
+        Me.Button_KelolaUser_Tambah.Size = New System.Drawing.Size(107, 35)
+        Me.Button_KelolaUser_Tambah.TabIndex = 4
+        Me.Button_KelolaUser_Tambah.Text = "Tambah"
+        Me.Button_KelolaUser_Tambah.UseVisualStyleBackColor = True
+        '
+        'DataGridView_KelolaUSer
+        '
+        Me.DataGridView_KelolaUSer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView_KelolaUSer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView_KelolaUSer.Location = New System.Drawing.Point(4, 232)
+        Me.DataGridView_KelolaUSer.Name = "DataGridView_KelolaUSer"
+        Me.DataGridView_KelolaUSer.Size = New System.Drawing.Size(729, 113)
+        Me.DataGridView_KelolaUSer.TabIndex = 7
         '
         'Form_Admin_KelolaUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(809, 351)
+        Me.ClientSize = New System.Drawing.Size(736, 348)
         Me.Controls.Add(Me.Panel_KelolaUser_Container)
         Me.Name = "Form_Admin_KelolaUser"
-        Me.Text = "Form_Admin_KelolaUser"
-        Me.Panel_KelolaUser_Container.ResumeLayout(False)
+        Me.Text = "Form Admin Kelola User"
+        Me.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
-        Me.Panel_Input_Kiri.ResumeLayout(False)
-        Me.Panel_Telepon.ResumeLayout(False)
-        Me.Panel_Telepon.PerformLayout()
-        Me.Panel_Nama.ResumeLayout(False)
-        Me.Panel_Nama.PerformLayout()
-        Me.Panel_TipeUser.ResumeLayout(False)
-        Me.Panel_TipeUser.PerformLayout()
-        Me.Panel_Input_Kanan.ResumeLayout(False)
-        Me.Panel_Alamat.ResumeLayout(False)
-        Me.Panel_Alamat.PerformLayout()
-        Me.Panel_Password.ResumeLayout(False)
-        Me.Panel_Password.PerformLayout()
-        Me.Panel_Username.ResumeLayout(False)
-        Me.Panel_Username.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        Me.Panel_KelolaUser_TipeUser.ResumeLayout(False)
+        Me.Panel_KelolaUser_TipeUser.PerformLayout()
+        Me.Panel_KelolaUser_Nama.ResumeLayout(False)
+        Me.Panel_KelolaUser_Nama.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.Panel_KelolaUser_Container.ResumeLayout(False)
+        Me.Panel_KelolaUser_Container.PerformLayout()
+        CType(Me.DataGridView_KelolaUSer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents Label_KelolaUser As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents SplitContainer1 As SplitContainer
+    Friend WithEvents Panel_KelolaUser_TipeUser As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel_KelolaUser_Container As Panel
-    Friend WithEvents SplitContainer1 As SplitContainer
-    Friend WithEvents Panel_Input_Kiri As Panel
-    Friend WithEvents Panel_Telepon As Panel
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Panel_Nama As Panel
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Panel_TipeUser As Panel
     Friend WithEvents ComboBox_KelolaUser_TipeUser As ComboBox
-    Friend WithEvents Label_TipeUser As Label
-    Friend WithEvents Panel_Input_Kanan As Panel
-    Friend WithEvents Panel_Alamat As Panel
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label_Alamat As Label
-    Friend WithEvents Panel_Password As Panel
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Panel_Username As Panel
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents TextBox_KelolaUser_Alamat As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents TextBox_KelolaUser_Telepon As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Panel_KelolaUser_Nama As Panel
+    Friend WithEvents TextBox_KelolaUser_NamaUser As TextBox
+    Friend WithEvents Label_Nama As Label
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents TextBox_KelolaUser_Password As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents TextBox_KelolaUser_Username As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button_KelolaUser_Tambah As Button
+    Friend WithEvents Label_KelolaUser_Cari As Label
+    Friend WithEvents Button_KelolaUser_Hapus As Button
+    Friend WithEvents Button_KelolaUser_Edit As Button
+    Friend WithEvents TextBox_KelolaUser_CariUser As TextBox
+    Friend WithEvents DataGridView_KelolaUSer As DataGridView
 End Class

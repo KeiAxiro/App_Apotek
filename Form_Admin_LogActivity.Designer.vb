@@ -44,7 +44,7 @@ Partial Class Form_Admin_LogActivity
         Me.Panel_Log.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_Log.Location = New System.Drawing.Point(0, 0)
         Me.Panel_Log.Name = "Panel_Log"
-        Me.Panel_Log.Size = New System.Drawing.Size(781, 414)
+        Me.Panel_Log.Size = New System.Drawing.Size(635, 414)
         Me.Panel_Log.TabIndex = 0
         '
         'Label2
@@ -52,7 +52,7 @@ Partial Class Form_Admin_LogActivity
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(159, 377)
+        Me.Label2.Location = New System.Drawing.Point(86, 377)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(103, 18)
         Me.Label2.TabIndex = 4
@@ -64,7 +64,7 @@ Partial Class Form_Admin_LogActivity
         Me.Button_Load.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button_Load.BackColor = System.Drawing.SystemColors.ControlDark
         Me.Button_Load.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button_Load.Location = New System.Drawing.Point(512, 372)
+        Me.Button_Load.Location = New System.Drawing.Point(439, 372)
         Me.Button_Load.Name = "Button_Load"
         Me.Button_Load.Size = New System.Drawing.Size(86, 28)
         Me.Button_Load.TabIndex = 8
@@ -74,7 +74,7 @@ Partial Class Form_Admin_LogActivity
         'DateTimePicker_Log
         '
         Me.DateTimePicker_Log.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.DateTimePicker_Log.Location = New System.Drawing.Point(290, 377)
+        Me.DateTimePicker_Log.Location = New System.Drawing.Point(217, 377)
         Me.DateTimePicker_Log.Name = "DateTimePicker_Log"
         Me.DateTimePicker_Log.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker_Log.TabIndex = 7
@@ -89,7 +89,7 @@ Partial Class Form_Admin_LogActivity
         Me.DataGridView_Log.Location = New System.Drawing.Point(10, 47)
         Me.DataGridView_Log.Name = "DataGridView_Log"
         Me.DataGridView_Log.ReadOnly = True
-        Me.DataGridView_Log.Size = New System.Drawing.Size(760, 305)
+        Me.DataGridView_Log.Size = New System.Drawing.Size(614, 305)
         Me.DataGridView_Log.TabIndex = 6
         '
         'Label1
@@ -97,7 +97,7 @@ Partial Class Form_Admin_LogActivity
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(343, 13)
+        Me.Label1.Location = New System.Drawing.Point(270, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(116, 24)
         Me.Label1.TabIndex = 5
@@ -108,7 +108,7 @@ Partial Class Form_Admin_LogActivity
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(781, 414)
+        Me.ClientSize = New System.Drawing.Size(635, 414)
         Me.Controls.Add(Me.Panel_Log)
         Me.Name = "Form_Admin_LogActivity"
         Me.Text = "Form_Admin_LogActivity"

@@ -138,6 +138,7 @@ Partial Class Form_Admin
         Me.Panel_Kanan.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_Kanan.Location = New System.Drawing.Point(0, 0)
         Me.Panel_Kanan.Name = "Panel_Kanan"
+        Me.Panel_Kanan.Padding = New System.Windows.Forms.Padding(5)
         Me.Panel_Kanan.Size = New System.Drawing.Size(583, 411)
         Me.Panel_Kanan.TabIndex = 0
         '
