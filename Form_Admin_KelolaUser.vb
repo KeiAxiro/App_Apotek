@@ -4,6 +4,11 @@
     End Sub
 
     Private Sub SplitContainer1_SplitterPaint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Paint
-        Dim Pen As 
+        Dim Pen As New Pen(Color.FromArgb(255, 0, 200, 0), 90)
+        Dim LocationSplitter As Integer = SplitContainer1.SplitterDistance
+        Dim SplitterSize = SplitContainer1.Size
+        Using Pen
+            e.Graphics.DrawLine(Pen, New Point(LocationSplitter, 20), New Point(LocationSplitter, SplitterSize.Width))
+        End Using
     End Sub
 End Class
