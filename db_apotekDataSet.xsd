@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="db_apotekDataSet" targetNamespace="http://tempuri.org/db_apotekDataSet.xsd" xmlns:mstns="http://tempuri.org/db_apotekDataSet.xsd" xmlns="http://tempuri.org/db_apotekDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="db_apotekConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db_apotekConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.App_Apotek.My.MySettings.GlobalReference.Default.db_apotekConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Tbl_UserTableAdapter" GeneratorDataComponentClassName="Tbl_UserTableAdapter" Name="Tbl_User" UserDataComponentName="Tbl_UserTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_apotekConnectionString (MySettings)" DbObjectName="Db_Apotek.dbo.Tbl_User" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Tipe_User FROM dbo.Tbl_User</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Tipe_User" DataSetColumn="Tipe_User" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="db_apotekDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="db_apotekDataSet" msprop:Generator_DataSetName="db_apotekDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tbl_User" msprop:Generator_RowEvHandlerName="Tbl_UserRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_UserRowDeleted" msprop:Generator_RowDeletingName="Tbl_UserRowDeleting" msprop:Generator_RowEvArgName="Tbl_UserRowChangeEvent" msprop:Generator_TablePropName="Tbl_User" msprop:Generator_RowChangedName="Tbl_UserRowChanged" msprop:Generator_RowChangingName="Tbl_UserRowChanging" msprop:Generator_TableClassName="Tbl_UserDataTable" msprop:Generator_RowClassName="Tbl_UserRow" msprop:Generator_TableVarName="tableTbl_User" msprop:Generator_UserTableName="Tbl_User">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tipe_User" msprop:Generator_ColumnPropNameInRow="Tipe_User" msprop:Generator_ColumnPropNameInTable="Tipe_UserColumn" msprop:Generator_ColumnVarNameInTable="columnTipe_User" msprop:Generator_UserColumnName="Tipe_User">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
