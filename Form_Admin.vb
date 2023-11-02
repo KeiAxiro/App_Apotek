@@ -1,14 +1,6 @@
 ﻿Public Class Form_Admin
     Private Sub Form_Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Form1.Hide()
-        Call Kondisi_Awal()
-    End Sub
-    Private Sub Form_Admin_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        Form1.Hide()
-        Call Kondisi_Awal()
-    End Sub
-
-    Sub Kondisi_Awal()
         Call ChangeChildPanel(Panel_Kanan, Form_Admin_LogActivity.Panel_Log)
     End Sub
 

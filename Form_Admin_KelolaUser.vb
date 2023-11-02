@@ -1,8 +1,7 @@
 ﻿Public Class Form_Admin_KelolaUser
-    Private Sub Form_Admin_KelolaUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Db_apotekDataSet.Tbl_User' table. You can move, or remove it, as needed.
-        Me.Tbl_UserTableAdapter.Fill(Me.Db_apotekDataSet.Tbl_User)
-        SplitContainer1.SplitterDistance = Panel_KelolaUser_Container.Width / 2
+
+    Private Sub Panel_KelolaUser_Container_ControlAdded(sender As Object, e As ControlEventArgs) Handles Panel_KelolaUser_Container.ControlAdded
+        Call Show_Grid_User()
     End Sub
 
     Private Sub SplitContainer1_SplitterPaint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Paint
@@ -21,8 +20,28 @@
         Dim Gap As Integer = 20
 
         Using Pen
-            e.Graphics.DrawLine(Pen, New Point(0, Pheight), New Point(PWidth - Gap, Pheight))
+            e.Graphics.DrawLine(Pen, New Point(0, Pheight), New Point(PWidth, Pheight))
         End Using
     End Sub
+
+    Sub Show_Grid_User()
+        Call Koneksi()
+        Dim GetDatUser As String = "SELECT * FROM Tbl_User"
+        Sda = New SqlClient.SqlDataAdapter(GetDatUser, Conn)
+        Ds = New DataSet
+        Sda.Fill(Ds, "Tbl_User")
+
+        DataGridView_KelolaUSer.DataSource = Ds.Tables("Tbl_User")
+
+    End Sub
+
+
+
+    Private Sub DataGridView_KelolaUSer_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView_KelolaUSer.CellClick
+        If e.RowIndex >= 0 Then
+            MsgBox("Kontol")
+        End If
+    End Sub
+
 
 End Class

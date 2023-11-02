@@ -17,4 +17,5 @@
         DataGridView_Log.DataSource = Ds.Tables("Tbl_Log")
     End Sub
 
+
 End Class
