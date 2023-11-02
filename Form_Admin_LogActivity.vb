@@ -17,5 +17,7 @@
         DataGridView_Log.DataSource = Ds.Tables("Tbl_Log")
     End Sub
 
+    Private Sub Form_Admin_LogActivity_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class

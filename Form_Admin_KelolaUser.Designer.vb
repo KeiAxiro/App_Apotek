@@ -218,7 +218,7 @@ Partial Class Form_Admin_KelolaUser
         Me.Panel_KelolaUser_Password.Controls.Add(Me.Label4)
         Me.Panel_KelolaUser_Password.Location = New System.Drawing.Point(18, 106)
         Me.Panel_KelolaUser_Password.Name = "Panel_KelolaUser_Password"
-        Me.Panel_KelolaUser_Password.Size = New System.Drawing.Size(327, 52)
+        Me.Panel_KelolaUser_Password.Size = New System.Drawing.Size(329, 52)
         Me.Panel_KelolaUser_Password.TabIndex = 4
         '
         'TextBox_KelolaUser_Password
@@ -249,7 +249,7 @@ Partial Class Form_Admin_KelolaUser
         Me.Panel_KelolaUser_Alamat.Controls.Add(Me.Label2)
         Me.Panel_KelolaUser_Alamat.Location = New System.Drawing.Point(18, 0)
         Me.Panel_KelolaUser_Alamat.Name = "Panel_KelolaUser_Alamat"
-        Me.Panel_KelolaUser_Alamat.Size = New System.Drawing.Size(327, 52)
+        Me.Panel_KelolaUser_Alamat.Size = New System.Drawing.Size(329, 52)
         Me.Panel_KelolaUser_Alamat.TabIndex = 4
         '
         'TextBox_KelolaUser_Alamat
@@ -280,7 +280,7 @@ Partial Class Form_Admin_KelolaUser
         Me.Panel_KelolaUser_Username.Controls.Add(Me.Label3)
         Me.Panel_KelolaUser_Username.Location = New System.Drawing.Point(18, 53)
         Me.Panel_KelolaUser_Username.Name = "Panel_KelolaUser_Username"
-        Me.Panel_KelolaUser_Username.Size = New System.Drawing.Size(327, 52)
+        Me.Panel_KelolaUser_Username.Size = New System.Drawing.Size(329, 52)
         Me.Panel_KelolaUser_Username.TabIndex = 4
         '
         'TextBox_KelolaUser_Username

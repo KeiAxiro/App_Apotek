@@ -42,6 +42,8 @@
             MsgBox("Kontol")
         End If
     End Sub
+    'hghgj
+    Private Sub Form_Admin_KelolaUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
+    End Sub
 End Class
