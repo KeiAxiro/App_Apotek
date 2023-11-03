@@ -1,7 +1,10 @@
-﻿Public Class Form_Admin_KelolaUser
+﻿Imports Microsoft.Azure.Management.Sql.Models
+
+Public Class Form_Admin_KelolaUser
 
     Private Sub Panel_KelolaUser_Container_ControlAdded(sender As Object, e As ControlEventArgs) Handles Panel_KelolaUser_Container.ControlAdded
         Call Show_Grid_User()
+
     End Sub
 
     Private Sub SplitContainer1_SplitterPaint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Paint
@@ -39,10 +42,10 @@
 
     Private Sub DataGridView_KelolaUSer_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView_KelolaUSer.CellClick
         If e.RowIndex >= 0 Then
-            MsgBox("Kontol")
+
         End If
     End Sub
-    'hghgj
+
     Private Sub Form_Admin_KelolaUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub

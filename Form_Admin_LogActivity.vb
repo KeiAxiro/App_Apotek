@@ -2,9 +2,11 @@
 
 
     Private Sub Button_Load_Click(sender As Object, e As EventArgs) Handles Button_Load.Click
+
         Call Show_DataGrid_Log()
     End Sub
-    Private Sub Panel_Log_ControlAdded(sender As Object, e As ControlEventArgs) Handles Panel_Log.ControlAdded
+    Private Sub Panel_Log_ControlAdded(sender As Object, e As EventArgs) Handles Panel_Log.ParentChanged
+
         Call Show_DataGrid_Log()
     End Sub
     Sub Show_DataGrid_Log()

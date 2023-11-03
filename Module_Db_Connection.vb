@@ -22,4 +22,16 @@ Module Module_Db_Connection
             End Try
         End If
     End Sub
+
+    Sub WriteLog(Aktivitas As String, Id_User As Integer)
+        Call Koneksi()
+        Dim InsertLog As String = "INSERT INTO Tbl_Log(Waktu,Aktivitas,Id_User) VALUES(@DateNow,@Aktivitas,@Id_User)"
+        Dim Cmd As New SqlCommand(InsertLog, Conn)
+        Cmd.Parameters.AddWithValue("@DateNow", DateTime.Now)
+        Cmd.Parameters.AddWithValue("@Aktivitas", Aktivitas)
+        Cmd.Parameters.AddWithValue("@Id_User", Id_User)
+        Cmd.ExecuteNonQuery()
+
+    End Sub
+
 End Module

@@ -2,9 +2,6 @@
 
 Class Form1
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
     Private Sub Panel_Kanan_Paint(sender As Object, e As PaintEventArgs) Handles Panel_Kanan.Paint
         Dim Pen As New Pen(Color.FromArgb(255, 0, 200, 0), 15)
         Dim Gap As Integer = 50
@@ -41,6 +38,8 @@ Class Form1
     Sub Login()
         Call Koneksi()
         Dim Login As String = "SELECT * FROM Tbl_User WHERE Username = @Username AND Password = @Password"
+
+
         Dim Cmd As New SqlCommand(Login, Conn)
         Cmd.Parameters.AddWithValue("@Username", TextBox_Username.Text)
         Cmd.Parameters.AddWithValue("@Password", TextBox_Password.Text)
@@ -55,9 +54,12 @@ Class Form1
 
             ElseIf Tipe_User = "KASIR" Then
             End If
+            Call WriteLog("Login", Srd.Item("Id_User"))
         Else
             MsgBox("Username Atau Password Salah!")
         End If
+        Srd.Close()
+
     End Sub
 
     Private Sub TextBox_Password_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_Password.KeyPress, TextBox_Username.KeyPress
