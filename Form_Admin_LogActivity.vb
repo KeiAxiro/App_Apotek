@@ -2,7 +2,6 @@
 
 
     Private Sub Button_Load_Click(sender As Object, e As EventArgs) Handles Button_Load.Click
-
         Call Show_DataGrid_Log()
     End Sub
     Private Sub Panel_Log_ControlAdded(sender As Object, e As EventArgs) Handles Panel_Log.ParentChanged
@@ -17,6 +16,10 @@
         Sda.Fill(Ds, "Tbl_Log")
 
         DataGridView_Log.DataSource = Ds.Tables("Tbl_Log")
+        Dim dateValue As Date = DateTimePicker_Log.Value.Date
+
+        Dim filterExpression As String = "dateCreatedAt >= '" & DateValue.ToString("MM/dd/yyyy") & "' AND dateCreatedAt <= '" & DateValue.AddDays(1).ToString("MM/dd/yyyy") & "'"
+        DataGridView_Log.FilterExpression = filterExpression
     End Sub
 
     Private Sub Form_Admin_LogActivity_Load(sender As Object, e As EventArgs) Handles MyBase.Load
