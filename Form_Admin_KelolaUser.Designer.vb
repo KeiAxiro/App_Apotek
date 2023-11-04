@@ -163,6 +163,7 @@ Partial Class Form_Admin_KelolaUser
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ComboBox_KelolaUser_TipeUser.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox_KelolaUser_TipeUser.FormattingEnabled = True
+        Me.ComboBox_KelolaUser_TipeUser.Items.AddRange(New Object() {"ADMIN", "APOTEKER", "KASIR"})
         Me.ComboBox_KelolaUser_TipeUser.Location = New System.Drawing.Point(0, 21)
         Me.ComboBox_KelolaUser_TipeUser.Name = "ComboBox_KelolaUser_TipeUser"
         Me.ComboBox_KelolaUser_TipeUser.Size = New System.Drawing.Size(319, 27)
@@ -218,7 +219,7 @@ Partial Class Form_Admin_KelolaUser
         Me.Panel_KelolaUser_Password.Controls.Add(Me.Label4)
         Me.Panel_KelolaUser_Password.Location = New System.Drawing.Point(18, 106)
         Me.Panel_KelolaUser_Password.Name = "Panel_KelolaUser_Password"
-        Me.Panel_KelolaUser_Password.Size = New System.Drawing.Size(333, 52)
+        Me.Panel_KelolaUser_Password.Size = New System.Drawing.Size(341, 52)
         Me.Panel_KelolaUser_Password.TabIndex = 4
         '
         'TextBox_KelolaUser_Password
@@ -249,7 +250,7 @@ Partial Class Form_Admin_KelolaUser
         Me.Panel_KelolaUser_Alamat.Controls.Add(Me.Label2)
         Me.Panel_KelolaUser_Alamat.Location = New System.Drawing.Point(18, 0)
         Me.Panel_KelolaUser_Alamat.Name = "Panel_KelolaUser_Alamat"
-        Me.Panel_KelolaUser_Alamat.Size = New System.Drawing.Size(333, 52)
+        Me.Panel_KelolaUser_Alamat.Size = New System.Drawing.Size(341, 52)
         Me.Panel_KelolaUser_Alamat.TabIndex = 4
         '
         'TextBox_KelolaUser_Alamat
@@ -280,7 +281,7 @@ Partial Class Form_Admin_KelolaUser
         Me.Panel_KelolaUser_Username.Controls.Add(Me.Label3)
         Me.Panel_KelolaUser_Username.Location = New System.Drawing.Point(18, 53)
         Me.Panel_KelolaUser_Username.Name = "Panel_KelolaUser_Username"
-        Me.Panel_KelolaUser_Username.Size = New System.Drawing.Size(333, 52)
+        Me.Panel_KelolaUser_Username.Size = New System.Drawing.Size(341, 52)
         Me.Panel_KelolaUser_Username.TabIndex = 4
         '
         'TextBox_KelolaUser_Username

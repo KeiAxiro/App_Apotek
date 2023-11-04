@@ -35,7 +35,7 @@ Class Form1
     End Sub
 
 
-    Sub Login()
+    Private Sub Login()
         Call Koneksi()
         Dim Login As String = "SELECT * FROM Tbl_User WHERE Username = @Username AND Password = @Password"
 
@@ -45,11 +45,11 @@ Class Form1
         Cmd.Parameters.AddWithValue("@Password", TextBox_Password.Text)
 
         Srd = Cmd.ExecuteReader
+        Srd.Read()
         If Srd.HasRows Then
-            Srd.Read()
             Dim Tipe_User As String = Srd.Item("Tipe_User")
             If Tipe_User = "ADMIN" Then
-                Form_Admin.ShowDialog()
+                Form_Admin.Show()
             ElseIf Tipe_User = "APOTEKER" Then
 
             ElseIf Tipe_User = "KASIR" Then
@@ -58,7 +58,6 @@ Class Form1
         Else
             MsgBox("Username Atau Password Salah!")
         End If
-        Srd.Close()
 
     End Sub
 

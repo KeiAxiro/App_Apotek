@@ -31,7 +31,7 @@ Module Module_Db_Connection
         Cmd.Parameters.AddWithValue("@Aktivitas", Aktivitas)
         Cmd.Parameters.AddWithValue("@Id_User", Id_User)
         Cmd.ExecuteNonQuery()
-
+        Cmd.Dispose()
     End Sub
 
 End Module

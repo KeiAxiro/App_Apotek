@@ -1,12 +1,49 @@
-﻿Imports Microsoft.Azure.Management.Sql.Models
+﻿Imports System.Data.SqlClient
+Imports Microsoft.Azure.Management.Sql.Models
 
 Public Class Form_Admin_KelolaUser
 
-    Private Sub Panel_KelolaUser_Container_ControlAdded(sender As Object, e As ControlEventArgs) Handles Panel_KelolaUser_Container.ControlAdded
+    Sub Kondisi_Awal()
+        Call Kondisi_Input(False)
         Call Show_Grid_User()
 
+        Button_KelolaUser_Tambah.Enabled = True
+        Button_KelolaUser_Edit.Enabled = False
+        Button_KelolaUser_Hapus.Enabled = False
+
+    End Sub
+    Sub Kondisi_Input(kondisi)
+        ComboBox_KelolaUser_TipeUser.Enabled = kondisi
+        TextBox_KelolaUser_NamaUser.Enabled = kondisi
+        TextBox_KelolaUser_Telepon.Enabled = kondisi
+        TextBox_KelolaUser_Alamat.Enabled = kondisi
+        TextBox_KelolaUser_Username.Enabled = kondisi
+        TextBox_KelolaUser_Password.Enabled = kondisi
+    End Sub
+    Sub Clear_Input()
+        ComboBox_KelolaUser_TipeUser.Text = ""
+        TextBox_KelolaUser_NamaUser.Clear()
+        TextBox_KelolaUser_Telepon.Clear()
+        TextBox_KelolaUser_Alamat.Clear()
+        TextBox_KelolaUser_Username.Clear()
+        TextBox_KelolaUser_Password.Clear()
+    End Sub
+    Private Sub Button_KelolaUser_Tambah_Click(sender As Object, e As EventArgs) Handles Button_KelolaUser_Tambah.Click
+        If Button_KelolaUser_Tambah.Text.ToLower = "tambah" Then
+            Button_KelolaUser_Tambah.Text = "Simpan"
+            Button_KelolaUser_Hapus.Text = "Cancel"
+        ElseIf Button_KelolaUser_Tambah.Text.ToLower = "simpan" Then
+            Button_KelolaUser_Tambah.Text = "Tambah"
+            Button_KelolaUser_Hapus.Text = "Hapus"
+        End If
     End Sub
 
+    ' Load
+    Private Sub Panel_KelolaUser_Container_ControlAdded(sender As Object, e As ControlEventArgs) Handles Panel_KelolaUser_Container.ControlAdded
+        Call Kondisi_Awal()
+    End Sub
+
+    'Ijo IJo
     Private Sub SplitContainer1_SplitterPaint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Paint
         Dim Pen As New Pen(Color.FromArgb(255, 0, 200, 0), 199)
         Dim LocationSplitter As Integer = SplitContainer1.SplitterDistance
@@ -29,8 +66,8 @@ Public Class Form_Admin_KelolaUser
 
     Sub Show_Grid_User()
         Call Koneksi()
-        Dim GetDatUser As String = "SELECT * FROM Tbl_User"
-        Sda = New SqlClient.SqlDataAdapter(GetDatUser, Conn)
+        Dim GetDataUser As String = "SELECT * FROM Tbl_User"
+        Sda = New SqlClient.SqlDataAdapter(GetDataUser, Conn)
         Ds = New DataSet
         Sda.Fill(Ds, "Tbl_User")
 
@@ -39,14 +76,30 @@ Public Class Form_Admin_KelolaUser
     End Sub
 
 
-
     Private Sub DataGridView_KelolaUSer_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView_KelolaUSer.CellClick
         If e.RowIndex >= 0 Then
+            Call Koneksi()
 
+            Dim SelectedRow As DataGridViewRow = DataGridView_KelolaUSer.Rows(e.RowIndex)
+            Dim ValueCell As String = SelectedRow.Cells(0).Value.ToString
+
+            Dim GetDataUserFromId As String = "SELECT * FROM Tbl_User Where Id_User = @Id_User"
+            Dim Cmd As New SqlCommand(GetDataUserFromId, Conn)
+            Cmd.Parameters.AddWithValue("@Id_User", ValueCell)
+            Srd = Cmd.ExecuteReader
+            Srd.Read()
+            If Srd.HasRows Then
+                ComboBox_KelolaUser_TipeUser.Text = Srd.Item("Tipe_User")
+                TextBox_KelolaUser_NamaUser.Text = Srd.Item("Nama_User")
+                TextBox_KelolaUser_Telepon.Text = Srd.Item("Telepon")
+                TextBox_KelolaUser_Alamat.Text = Srd.Item("Alamat")
+                TextBox_KelolaUser_Username.Text = Srd.Item("Username")
+                TextBox_KelolaUser_Password.Text = Srd.Item("Password")
+            Else
+                Call Button_KelolaUser_Tambah_Click(sender, e)
+                Srd.Close()
+            End If
         End If
     End Sub
 
-    Private Sub Form_Admin_KelolaUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

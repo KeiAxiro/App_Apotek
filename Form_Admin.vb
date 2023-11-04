@@ -1,5 +1,6 @@
 ﻿Public Class Form_Admin
-    Private Sub Form_Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub Panel_Kanan_ControlAdded(sender As Object, e As ControlEventArgs) Handles Panel_Kanan.AutoSizeChanged
         Form1.Hide()
         Call ChangeChildPanel(Panel_Kanan, Form_Admin_LogActivity.Panel_Log)
     End Sub
